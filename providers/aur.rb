@@ -140,7 +140,7 @@ action :build do
     opts = new_resource
 
     Chef::Log.debug("Checking for #{aurfile_path target, opts.build_dir}")
-    if not already_built? target, build_dir
+    if not already_built? target, opts.build_dir
         build_aur target, opts
         new_resource.updated_by_last_action true
     end
