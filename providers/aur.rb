@@ -165,7 +165,7 @@ end
 class Package
     attr_reader :name, :version, :arch, :dependents
 
-    @@version_arch_re = /Version +: ([\w.-]+).+Architecture +: (\w+)/m
+    @@version_arch_re = /Version +: (?:\d+:)?([\w.-]+).+Architecture +: (\w+)/m
     @@default_arch = RUBY_PLATFORM.split("-")[0]
 
     def initialize name, is_aur
