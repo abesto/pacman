@@ -19,7 +19,7 @@
 
 actions :build, :install, :sync
 
-default_action :install
+default_action [:build, :install]
 
 attribute :package_name, :name_attribute => true
 attribute :version, :default => nil
