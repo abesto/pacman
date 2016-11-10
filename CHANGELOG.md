@@ -1,3 +1,10 @@
+## v2.0.2
+
+* Build, as well as install, by default.
+* Stop being confused when a PKGBUILD has an epoch defined
+* Fix build_dir method not found
+* Fix FC001
+
 ## v2.0.1:
 
 - fix download URL for AUR v4.0.0 (thanks [@fabiendelpierre](https://github.com/fabiendelpierre)!)
